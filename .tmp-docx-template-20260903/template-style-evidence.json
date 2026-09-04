@@ -1,0 +1,98 @@
+{
+  "input": "C:\\Users\\Yetkin\\Desktop\\RaporAgent\\Templates\\adli-rapor-sablonu.docx",
+  "fonts_by_char_count": {},
+  "direct_run_formatting_runs": 35,
+  "direct_paragraph_formatting_paragraphs": 32,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 1,
+      "text": "T.C.\nSA\u011eLIK BAKANLI\u011eI\nADL\u0130 TAB\u0130PL\u0130K MUAYENE VE DE\u011eERLEND\u0130RME RAPORU",
+      "style": "Normal"
+    },
+    {
+      "para_index": 4,
+      "text": "1. K\u0130ML\u0130K VE PROTOKOL B\u0130LG\u0130LER\u0130",
+      "style": "Normal"
+    },
+    {
+      "para_index": 6,
+      "text": "2. ANAMNEZ VE OLAY \u00d6YK\u00dcS\u00dc",
+      "style": "Normal"
+    },
+    {
+      "para_index": 8,
+      "text": "3. F\u0130Z\u0130K\u0130 MUAYENE VE TIBB\u0130 BULGULAR",
+      "style": "Normal"
+    },
+    {
+      "para_index": 10,
+      "text": "4. SONU\u00c7 VE ADL\u0130 KANAAT",
+      "style": "Normal"
+    },
+    {
+      "para_index": 11,
+      "text": "{{ medical.conclusion }}",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "T.C.\nSA\u011eLIK BAKANLI\u011eI\nADL\u0130 TAB\u0130PL\u0130K MUAYENE VE DE\u011eERLEND\u0130RME RAPORU",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "text": "\u2014 KURUMSAL OTOMASYON \u015eABLONU \u2014",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "text": "1. K\u0130ML\u0130K VE PROTOKOL B\u0130LG\u0130LER\u0130",
+        "style": "Normal"
+      },
+      {
+        "para_index": 5,
+        "text": "",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 1,
+        "run_text": "T.C.\nSA\u011eLIK BAKANLI\u011eI\n",
+        "style": "Normal"
+      },
+      {
+        "para_index": 1,
+        "run_text": "ADL\u0130 TAB\u0130PL\u0130K MUAYENE VE DE\u011eERLEND\u0130RME RAPORU",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "run_text": "\u2014 KURUMSAL OTOMASYON \u015eABLONU \u2014",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "run_text": "1. K\u0130ML\u0130K VE PROTOKOL B\u0130LG\u0130LER\u0130",
+        "style": "Normal"
+      },
+      {
+        "para_index": 6,
+        "run_text": "2. ANAMNEZ VE OLAY \u00d6YK\u00dcS\u00dc",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

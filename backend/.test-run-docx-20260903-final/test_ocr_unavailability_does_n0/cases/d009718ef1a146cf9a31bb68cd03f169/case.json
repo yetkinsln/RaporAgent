@@ -1,0 +1,46 @@
+{
+  "case_id": "d009718ef1a146cf9a31bb68cd03f169",
+  "documents": [
+    {
+      "document_id": "1b05ac31cede46bfb336016bf19899c2",
+      "file_name": "synthetic-test.png",
+      "file_path": "originals\\1b05ac31cede46bfb336016bf19899c2.png",
+      "mime_type": "image/png",
+      "type": "unknown",
+      "classification_confidence": null,
+      "user_confirmed_type": false,
+      "pages": [
+        {
+          "page": 1,
+          "path": "C:\\Users\\Yetkin\\Desktop\\RaporAgent\\backend\\.test-run-docx-20260903-final\\test_ocr_unavailability_does_n0\\cases\\d009718ef1a146cf9a31bb68cd03f169\\pages\\1b05ac31cede46bfb336016bf19899c2-001.png",
+          "original_path": "C:\\Users\\Yetkin\\Desktop\\RaporAgent\\backend\\.test-run-docx-20260903-final\\test_ocr_unavailability_does_n0\\cases\\d009718ef1a146cf9a31bb68cd03f169\\pages\\1b05ac31cede46bfb336016bf19899c2-001.png",
+          "original_width": 20,
+          "original_height": 20,
+          "width": 20,
+          "height": 20,
+          "transform": {
+            "revision": 0,
+            "operations": []
+          },
+          "image_endpoint": "/api/documents/1b05ac31cede46bfb336016bf19899c2/pages/1/image"
+        }
+      ],
+      "ocr_status": "error",
+      "ocr_error": "Yerel OCR kullanıma hazır değil. Kurulumu kontrol edip yeniden deneyin.",
+      "ocr_lines": [],
+      "ocr_history": [],
+      "is_synthetic": false
+    }
+  ],
+  "extraction": null,
+  "report_drafts": [],
+  "docx_input": null,
+  "docx_reports": [],
+  "audit": [
+    {
+      "event": "document_uploaded",
+      "document_id": "1b05ac31cede46bfb336016bf19899c2"
+    }
+  ],
+  "stage": "documents"
+}

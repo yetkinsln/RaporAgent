@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.test-runs/
+.venv/
+.venv-paddle-test/
+.venv-paddle312-test/
+.venv-paddle-ocr-test/
+.paddle-models/
+node_modules/
+frontend/node_modules/
+frontend/dist/
+data/
+runtime-data/
+.tmp-template-distill-*/
+.coverage
+qwen3-8b/

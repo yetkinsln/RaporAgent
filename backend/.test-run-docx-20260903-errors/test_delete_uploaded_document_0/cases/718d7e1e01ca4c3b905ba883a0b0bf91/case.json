@@ -1,0 +1,25 @@
+{
+  "case_id": "718d7e1e01ca4c3b905ba883a0b0bf91",
+  "documents": [],
+  "extraction": null,
+  "report_drafts": [],
+  "docx_input": null,
+  "docx_reports": [],
+  "audit": [
+    {
+      "event": "document_uploaded",
+      "document_id": "765bff84427f43c7a0383bbecc795323"
+    },
+    {
+      "event": "page_transformed",
+      "document_id": "765bff84427f43c7a0383bbecc795323",
+      "page": 1,
+      "operation": "rotate_clockwise"
+    },
+    {
+      "event": "document_deleted",
+      "document_id": "765bff84427f43c7a0383bbecc795323"
+    }
+  ],
+  "stage": "documents"
+}

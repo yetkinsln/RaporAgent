@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.example/schemas/case-extraction.schema.json",
+  "title": "Adli rapor vaka çıkarımı",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "case_id", "patient", "request", "documents", "warnings", "ready_to_generate"],
+  "properties": {
+    "schema_version": { "const": "1.2.0" },
+    "case_id": { "type": "string", "minLength": 1 },
+    "patient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["full_name", "tckn", "birth_place", "birth_date"],
+      "properties": {
+        "full_name": { "$ref": "#/$defs/evidenceString" },
+        "tckn": { "$ref": "#/$defs/evidenceString" },
+        "birth_place": { "$ref": "#/$defs/evidenceString" },
+        "birth_date": { "$ref": "#/$defs/evidenceString" }
+      }
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sender_authority", "letter_date", "letter_number", "incident", "requested_questions"],
+      "properties": {
+        "sender_authority": { "$ref": "#/$defs/evidenceString" },
+        "letter_date": { "$ref": "#/$defs/evidenceString" },
+        "letter_number": { "$ref": "#/$defs/evidenceString" },
+        "incident": { "$ref": "#/$defs/evidenceString" },
+        "requested_questions": { "$ref": "#/$defs/evidenceStringArray" }
+      }
+    },
+    "documents": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/document" }
+    },
+    "medical": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "issuing_institution": { "$ref": "#/$defs/evidenceString" },
+        "protocol_number": { "$ref": "#/$defs/evidenceString" },
+        "report_date": { "$ref": "#/$defs/evidenceString" },
+        "report_number": { "$ref": "#/$defs/evidenceString" },
+        "incident_date_time": { "$ref": "#/$defs/evidenceString" },
+        "incident_type": { "$ref": "#/$defs/evidenceString" },
+        "clinical_findings": { "$ref": "#/$defs/evidenceString" },
+        "general_forensic_exam_summary": { "$ref": "#/$defs/evidenceString" },
+        "epicrisis_summary": { "$ref": "#/$defs/evidenceString" },
+        "department_exam_summary": { "$ref": "#/$defs/evidenceString" },
+        "life_threat": { "$ref": "#/$defs/criticalOpinion" },
+        "simple_medical_intervention": { "$ref": "#/$defs/criticalOpinion" }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "message", "severity"],
+        "properties": {
+          "code": { "type": "string" },
+          "message": { "type": "string" },
+          "severity": { "enum": ["info", "warning", "blocking"] },
+          "field_path": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "ready_to_generate": { "type": "boolean" }
+  },
+  "$defs": {
+    "status": {
+      "enum": ["extracted", "user_corrected", "missing", "conflict"]
+    },
+    "polygon": {
+      "type": ["array", "null"],
+      "minItems": 4,
+      "items": {
+        "type": "array",
+        "prefixItems": [{ "type": "number" }, { "type": "number" }],
+        "items": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_document_id", "page", "evidence_text", "ocr_confidence", "polygon"],
+      "properties": {
+        "source_document_id": { "type": ["string", "null"] },
+        "page": { "type": ["integer", "null"], "minimum": 1 },
+        "evidence_text": { "type": ["string", "null"] },
+        "ocr_confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "polygon": { "$ref": "#/$defs/polygon" }
+      }
+    },
+    "evidenceString": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "original_value", "status", "approved", "provenance", "candidates"],
+      "properties": {
+        "value": { "type": ["string", "null"] },
+        "original_value": { "type": ["string", "null"] },
+        "status": { "$ref": "#/$defs/status" },
+        "approved": { "type": "boolean" },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "candidates": { "type": "array", "items": { "$ref": "#/$defs/candidate" } }
+      }
+    },
+    "evidenceStringArray": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "original_value", "status", "approved", "provenance", "candidates"],
+      "properties": {
+        "value": {
+          "type": ["array", "null"],
+          "items": { "type": "string" }
+        },
+        "original_value": { "type": ["array", "null"], "items": { "type": "string" } },
+        "status": { "$ref": "#/$defs/status" },
+        "approved": { "type": "boolean" },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "candidates": { "type": "array", "items": { "$ref": "#/$defs/candidate" } }
+      }
+    },
+    "criticalOpinion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "original_value", "status", "approved", "provenance", "candidates"],
+      "properties": {
+        "value": { "enum": ["yes", "no", "not_stated", null] },
+        "original_value": { "type": ["string", "null"] },
+        "status": { "$ref": "#/$defs/status" },
+        "approved": { "type": "boolean" },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "candidates": { "type": "array", "items": { "$ref": "#/$defs/candidate" } }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "original_value", "provenance"],
+      "properties": {
+        "value": {
+          "type": ["string", "array", "null"],
+          "items": { "type": "string" }
+        },
+        "original_value": {
+          "type": ["string", "array", "null"],
+          "items": { "type": "string" }
+        },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }
+    },
+    "document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["document_id", "type", "file_name", "page_count", "classification_confidence", "user_confirmed_type"],
+      "properties": {
+        "document_id": { "type": "string" },
+        "type": {
+          "enum": ["cover_letter", "general_forensic_exam", "epicrisis", "department_exam_note", "other", "unknown"]
+        },
+        "file_name": { "type": "string" },
+        "page_count": { "type": "integer", "minimum": 1 },
+        "classification_confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "user_confirmed_type": { "type": "boolean" }
+      }
+    }
+  }
+}

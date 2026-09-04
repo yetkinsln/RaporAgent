@@ -1,0 +1,37 @@
+name: rapor-agent
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      RAPOR_AGENT_DATA_DIR: /app/data
+      RAPOR_AGENT_LLM_MODEL_DIR: /models/qwen3-8b
+      RAPOR_AGENT_TEMPLATE_DIR: /templates
+      RAPOR_AGENT_PADDLE_DET_MODEL_DIR: /opt/paddle-models/official_models/PP-OCRv5_server_det
+      RAPOR_AGENT_PADDLE_REC_MODEL_DIR: /opt/paddle-models/official_models/latin_PP-OCRv5_mobile_rec
+      PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: "True"
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+    volumes:
+      - ./runtime-data:/app/data
+      - ./qwen3-8b:/models/qwen3-8b:ro
+      - ./Templates/adli-rapor-sablonu-v2.docx:/templates/adli-rapor-sablonu-v2.docx:ro
+      - ./Templates/kurumsal-girdiler_mapping_alan-esleme-v2.json:/templates/kurumsal-girdiler_mapping_alan-esleme-v2.json:ro
+    gpus: all
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/openapi.json', timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+
+  web:
+    build:
+      context: ./frontend
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:5173:80"

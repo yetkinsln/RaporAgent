@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "draft_id": "12fb2f87b3cc49e796ef5ea7fad27dac",
+  "case_id": "68cfbd07f8134af2b436f06d33f51860",
+  "created_at": "2026-09-03T17:52:26.003694+00:00",
+  "status": "review_required",
+  "generation": {
+    "provider": "synthetic-test",
+    "model_name": "SENTETIK-QWEN",
+    "model_revision": "synthetic",
+    "prompt_version": "report-plan-v1",
+    "local_only": true
+  },
+  "source_extraction_version": "1.2.0",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "Giriş",
+      "text": "DENİZ ÖRNEK hakkında, SENTETİK İLÇE EMNİYET MÜDÜRLÜĞÜ tarafından 14.08.2026 tarihli ve 2026/DEMO-001 sayılı yazı ile bildirilen Sentetik iş kazası bildirimi kapsamında, Yaralanmanın basit tıbbi müdahale ile giderilebilirliği ve hayati tehlike durumu. hususunda değerlendirme talep edilmiştir.",
+      "source_field_paths": [
+        "patient.full_name",
+        "request.sender_authority",
+        "request.letter_date",
+        "request.letter_number",
+        "request.incident",
+        "request.requested_questions"
+      ]
+    },
+    {
+      "id": "general_forensic_exam",
+      "title": "Genel adli muayene kaydı",
+      "text": "SENTETİK EĞİTİM VE ARAŞTIRMA HASTANESİ tarafından düzenlenen 15.08.2026 tarihli ve GARM-2026-0001 sayılı genel adli muayene raporunda; 14.08.2026 16:30 tarihli başvuruya ilişkin Sentetik iş kazası bilgisi ile Sol ön kolda 2 cm yüzeysel abrazyon gözlendi. kaydı yer almaktadır.",
+      "source_field_paths": [
+        "medical.issuing_institution",
+        "medical.report_date",
+        "medical.report_number",
+        "medical.incident_date_time",
+        "medical.incident_type",
+        "medical.clinical_findings"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "Kullanıcı onaylı sonuç kaydı",
+      "text": "Kaynakta yer alan ve kullanıcı tarafından onaylanan değerlendirmeye göre; şahsın yaşamını TEHLİKEYE SOKMADIĞI, basit tıbbi müdahale ile giderilebilecek derecede hafif nitelikte OLDUĞU kanaatlerimizi bildirir taslaktır.",
+      "source_field_paths": [
+        "medical.life_threat",
+        "medical.simple_medical_intervention"
+      ]
+    }
+  ],
+  "blockers": []
+}

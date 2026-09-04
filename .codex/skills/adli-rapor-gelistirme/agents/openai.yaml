@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adli Rapor Gelistirme"
+  short_description: "Yerel OCR tabanlı adli rapor taslağı geliştir"
+  default_prompt: "Adli rapor taslak uygulamasında istenen değişikliği kaynak izleme, insan onayı ve yerel çalışma kurallarını koruyarak uygula."

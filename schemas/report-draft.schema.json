@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.example/schemas/report-draft.schema.json",
+  "title": "Yerel adli rapor taslağı",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "draft_id", "case_id", "created_at", "status", "generation", "source_extraction_version", "sections", "blockers"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "draft_id": { "type": "string", "pattern": "^[0-9a-f]{32}$" },
+    "case_id": { "type": "string", "pattern": "^[0-9a-f]{32}$" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "status": { "const": "review_required" },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "model_name", "model_revision", "prompt_version", "local_only"],
+      "properties": {
+        "provider": { "type": "string", "minLength": 1 },
+        "model_name": { "type": "string", "minLength": 1 },
+        "model_revision": { "type": "string", "minLength": 1 },
+        "prompt_version": { "type": "string", "minLength": 1 },
+        "local_only": { "const": true }
+      }
+    },
+    "source_extraction_version": { "const": "1.2.0" },
+    "sections": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "text", "source_field_paths"],
+        "properties": {
+          "id": { "enum": ["introduction", "general_forensic_exam", "conclusion"] },
+          "title": { "type": "string", "minLength": 1 },
+          "text": { "type": "string", "minLength": 1, "maxLength": 8000 },
+          "source_field_paths": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "pattern": "^(patient|request|medical)\\.[a-z_]+$" }
+          }
+        }
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "description": "Word üretim kapıları taslak sözleşmesinden ayrıdır; mevcut sürümde taslak blocker taşımaz.",
+      "maxItems": 0
+    }
+  }
+}

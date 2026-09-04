@@ -1,0 +1,10 @@
+.venv/
+.venv-paddle-test/
+.venv-paddle312-test/
+.venv-paddle-ocr-test/
+.paddle-models/
+.pytest_cache/
+.test-runs/
+__pycache__/
+tests/
+*.py[cod]

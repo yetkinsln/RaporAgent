@@ -1,0 +1,15 @@
+# Yerel PaddleOCR kurulumu ayridir; uygulama calisirken model indirmez.
+-r requirements.txt
+paddlepaddle==3.0.0
+paddlex[ocr]==3.1.2
+# PaddleX 3.1.2'nin OCR dışı modül içe aktarımları, 1.x yerine bu API yüzeyini bekler.
+# Bu paketler uygulamada LLM çağrısı yapmak için kullanılmaz.
+langchain==0.2.17
+langchain-community==0.2.19
+langchain-core==0.2.43
+# PaddleX 3.1.2 tüm model kayıtlarını içe aktarır; OCR yolunda kullanılan CPU
+# çalışma zamanı bileşenleri sürüm uyumluluğu için açıkça kilitlenir.
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.2
+opencv-contrib-python-headless==4.10.0.84

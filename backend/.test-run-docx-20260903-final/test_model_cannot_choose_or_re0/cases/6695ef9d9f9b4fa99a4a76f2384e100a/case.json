@@ -1,0 +1,2606 @@
+{
+  "case_id": "6695ef9d9f9b4fa99a4a76f2384e100a",
+  "documents": [
+    {
+      "document_id": "900a1b6234af45eeba13f7e35e36030e",
+      "file_name": "SENTETIK_ust_yazi.png",
+      "mime_type": "image/png",
+      "type": "cover_letter",
+      "classification_confidence": 0.93,
+      "user_confirmed_type": false,
+      "pages": [
+        {
+          "page": 1,
+          "path": "C:\\Users\\Yetkin\\Desktop\\RaporAgent\\backend\\.test-run-docx-20260903-final\\test_model_cannot_choose_or_re0\\cases\\6695ef9d9f9b4fa99a4a76f2384e100a\\pages\\900a1b6234af45eeba13f7e35e36030e-001.png",
+          "original_path": "C:\\Users\\Yetkin\\Desktop\\RaporAgent\\backend\\.test-run-docx-20260903-final\\test_model_cannot_choose_or_re0\\cases\\6695ef9d9f9b4fa99a4a76f2384e100a\\pages\\900a1b6234af45eeba13f7e35e36030e-001.png",
+          "original_width": 1000,
+          "original_height": 900,
+          "width": 1000,
+          "height": 900,
+          "transform": {
+            "revision": 0,
+            "operations": []
+          },
+          "image_endpoint": "/api/documents/900a1b6234af45eeba13f7e35e36030e/pages/1/image"
+        }
+      ],
+      "ocr_status": "completed",
+      "ocr_error": null,
+      "ocr_lines": [
+        {
+          "text": "SENTETİK İLÇE EMNİYET MÜDÜRLÜĞÜ",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              112
+            ],
+            [
+              918,
+              112
+            ],
+            [
+              918,
+              160
+            ],
+            [
+              82,
+              160
+            ]
+          ],
+          "reading_order": 0,
+          "page": 1
+        },
+        {
+          "text": "Sayı: 2026/DEMO-001",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              176
+            ],
+            [
+              918,
+              176
+            ],
+            [
+              918,
+              224
+            ],
+            [
+              82,
+              224
+            ]
+          ],
+          "reading_order": 1,
+          "page": 1
+        },
+        {
+          "text": "Tarih: 14.08.2026",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              240
+            ],
+            [
+              918,
+              240
+            ],
+            [
+              918,
+              288
+            ],
+            [
+              82,
+              288
+            ]
+          ],
+          "reading_order": 2,
+          "page": 1
+        },
+        {
+          "text": "Konu: Sentetik vaka hakkında adli rapor talebi",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              304
+            ],
+            [
+              918,
+              304
+            ],
+            [
+              918,
+              352
+            ],
+            [
+              82,
+              352
+            ]
+          ],
+          "reading_order": 3,
+          "page": 1
+        },
+        {
+          "text": "Adı Soyadı: DENİZ ÖRNEK",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              368
+            ],
+            [
+              918,
+              368
+            ],
+            [
+              918,
+              416
+            ],
+            [
+              82,
+              416
+            ]
+          ],
+          "reading_order": 4,
+          "page": 1
+        },
+        {
+          "text": "TCKN: 10000000146",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              432
+            ],
+            [
+              918,
+              432
+            ],
+            [
+              918,
+              480
+            ],
+            [
+              82,
+              480
+            ]
+          ],
+          "reading_order": 5,
+          "page": 1
+        },
+        {
+          "text": "Doğum Yeri: SENTETİK İL",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              496
+            ],
+            [
+              918,
+              496
+            ],
+            [
+              918,
+              544
+            ],
+            [
+              82,
+              544
+            ]
+          ],
+          "reading_order": 6,
+          "page": 1
+        },
+        {
+          "text": "Doğum Tarihi: 02.05.1991",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              560
+            ],
+            [
+              918,
+              560
+            ],
+            [
+              918,
+              608
+            ],
+            [
+              82,
+              608
+            ]
+          ],
+          "reading_order": 7,
+          "page": 1
+        },
+        {
+          "text": "Olay: Sentetik iş kazası bildirimi",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              624
+            ],
+            [
+              918,
+              624
+            ],
+            [
+              918,
+              672
+            ],
+            [
+              82,
+              672
+            ]
+          ],
+          "reading_order": 8,
+          "page": 1
+        },
+        {
+          "text": "İstenen Hususlar: Yaralanmanın basit tıbbi müdahale ile giderilebilirliği ve hayati tehlike durumu.",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              688
+            ],
+            [
+              918,
+              688
+            ],
+            [
+              918,
+              736
+            ],
+            [
+              82,
+              736
+            ]
+          ],
+          "reading_order": 9,
+          "page": 1
+        }
+      ],
+      "ocr_history": [],
+      "synthetic_ocr_lines": [
+        {
+          "text": "SENTETİK İLÇE EMNİYET MÜDÜRLÜĞÜ",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              112
+            ],
+            [
+              918,
+              112
+            ],
+            [
+              918,
+              160
+            ],
+            [
+              82,
+              160
+            ]
+          ],
+          "reading_order": 0,
+          "page": 1
+        },
+        {
+          "text": "Sayı: 2026/DEMO-001",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              176
+            ],
+            [
+              918,
+              176
+            ],
+            [
+              918,
+              224
+            ],
+            [
+              82,
+              224
+            ]
+          ],
+          "reading_order": 1,
+          "page": 1
+        },
+        {
+          "text": "Tarih: 14.08.2026",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              240
+            ],
+            [
+              918,
+              240
+            ],
+            [
+              918,
+              288
+            ],
+            [
+              82,
+              288
+            ]
+          ],
+          "reading_order": 2,
+          "page": 1
+        },
+        {
+          "text": "Konu: Sentetik vaka hakkında adli rapor talebi",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              304
+            ],
+            [
+              918,
+              304
+            ],
+            [
+              918,
+              352
+            ],
+            [
+              82,
+              352
+            ]
+          ],
+          "reading_order": 3,
+          "page": 1
+        },
+        {
+          "text": "Adı Soyadı: DENİZ ÖRNEK",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              368
+            ],
+            [
+              918,
+              368
+            ],
+            [
+              918,
+              416
+            ],
+            [
+              82,
+              416
+            ]
+          ],
+          "reading_order": 4,
+          "page": 1
+        },
+        {
+          "text": "TCKN: 10000000146",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              432
+            ],
+            [
+              918,
+              432
+            ],
+            [
+              918,
+              480
+            ],
+            [
+              82,
+              480
+            ]
+          ],
+          "reading_order": 5,
+          "page": 1
+        },
+        {
+          "text": "Doğum Yeri: SENTETİK İL",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              496
+            ],
+            [
+              918,
+              496
+            ],
+            [
+              918,
+              544
+            ],
+            [
+              82,
+              544
+            ]
+          ],
+          "reading_order": 6,
+          "page": 1
+        },
+        {
+          "text": "Doğum Tarihi: 02.05.1991",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              560
+            ],
+            [
+              918,
+              560
+            ],
+            [
+              918,
+              608
+            ],
+            [
+              82,
+              608
+            ]
+          ],
+          "reading_order": 7,
+          "page": 1
+        },
+        {
+          "text": "Olay: Sentetik iş kazası bildirimi",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              624
+            ],
+            [
+              918,
+              624
+            ],
+            [
+              918,
+              672
+            ],
+            [
+              82,
+              672
+            ]
+          ],
+          "reading_order": 8,
+          "page": 1
+        },
+        {
+          "text": "İstenen Hususlar: Yaralanmanın basit tıbbi müdahale ile giderilebilirliği ve hayati tehlike durumu.",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              688
+            ],
+            [
+              918,
+              688
+            ],
+            [
+              918,
+              736
+            ],
+            [
+              82,
+              736
+            ]
+          ],
+          "reading_order": 9,
+          "page": 1
+        }
+      ],
+      "is_synthetic": true
+    },
+    {
+      "document_id": "d144114f69214e65a92323b895778faf",
+      "file_name": "SENTETIK_genel_adli_muayene.png",
+      "mime_type": "image/png",
+      "type": "general_forensic_exam",
+      "classification_confidence": 0.99,
+      "user_confirmed_type": false,
+      "pages": [
+        {
+          "page": 1,
+          "path": "C:\\Users\\Yetkin\\Desktop\\RaporAgent\\backend\\.test-run-docx-20260903-final\\test_model_cannot_choose_or_re0\\cases\\6695ef9d9f9b4fa99a4a76f2384e100a\\pages\\d144114f69214e65a92323b895778faf-001.png",
+          "original_path": "C:\\Users\\Yetkin\\Desktop\\RaporAgent\\backend\\.test-run-docx-20260903-final\\test_model_cannot_choose_or_re0\\cases\\6695ef9d9f9b4fa99a4a76f2384e100a\\pages\\d144114f69214e65a92323b895778faf-001.png",
+          "original_width": 1000,
+          "original_height": 900,
+          "width": 1000,
+          "height": 900,
+          "transform": {
+            "revision": 0,
+            "operations": []
+          },
+          "image_endpoint": "/api/documents/d144114f69214e65a92323b895778faf/pages/1/image"
+        }
+      ],
+      "ocr_status": "completed",
+      "ocr_error": null,
+      "ocr_lines": [
+        {
+          "text": "GENEL ADLİ MUAYENE RAPORU — SENTETİK ÖRNEK",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              112
+            ],
+            [
+              918,
+              112
+            ],
+            [
+              918,
+              160
+            ],
+            [
+              82,
+              160
+            ]
+          ],
+          "reading_order": 0,
+          "page": 1
+        },
+        {
+          "text": "Kurum: SENTETİK EĞİTİM VE ARAŞTIRMA HASTANESİ",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              176
+            ],
+            [
+              918,
+              176
+            ],
+            [
+              918,
+              224
+            ],
+            [
+              82,
+              224
+            ]
+          ],
+          "reading_order": 1,
+          "page": 1
+        },
+        {
+          "text": "Rapor Tarihi: 15.08.2026",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              240
+            ],
+            [
+              918,
+              240
+            ],
+            [
+              918,
+              288
+            ],
+            [
+              82,
+              288
+            ]
+          ],
+          "reading_order": 2,
+          "page": 1
+        },
+        {
+          "text": "Rapor Sayısı: GARM-2026-0001",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              304
+            ],
+            [
+              918,
+              304
+            ],
+            [
+              918,
+              352
+            ],
+            [
+              82,
+              352
+            ]
+          ],
+          "reading_order": 3,
+          "page": 1
+        },
+        {
+          "text": "Protokol No: PR-2026-0001",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              368
+            ],
+            [
+              918,
+              368
+            ],
+            [
+              918,
+              416
+            ],
+            [
+              82,
+              416
+            ]
+          ],
+          "reading_order": 4,
+          "page": 1
+        },
+        {
+          "text": "Başvuru/Olay Tarihi: 14.08.2026 16:30",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              432
+            ],
+            [
+              918,
+              432
+            ],
+            [
+              918,
+              480
+            ],
+            [
+              82,
+              480
+            ]
+          ],
+          "reading_order": 5,
+          "page": 1
+        },
+        {
+          "text": "Başvuru Nedeni: Sentetik iş kazası",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              496
+            ],
+            [
+              918,
+              496
+            ],
+            [
+              918,
+              544
+            ],
+            [
+              82,
+              544
+            ]
+          ],
+          "reading_order": 6,
+          "page": 1
+        },
+        {
+          "text": "Adı Soyadı: DENİZ ÖRNEK",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              560
+            ],
+            [
+              918,
+              560
+            ],
+            [
+              918,
+              608
+            ],
+            [
+              82,
+              608
+            ]
+          ],
+          "reading_order": 7,
+          "page": 1
+        },
+        {
+          "text": "TCKN: 10000000146",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              624
+            ],
+            [
+              918,
+              624
+            ],
+            [
+              918,
+              672
+            ],
+            [
+              82,
+              672
+            ]
+          ],
+          "reading_order": 8,
+          "page": 1
+        },
+        {
+          "text": "Doğum Yeri ve Tarihi: SENTETİK İL / 02.05.1991",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              688
+            ],
+            [
+              918,
+              688
+            ],
+            [
+              918,
+              736
+            ],
+            [
+              82,
+              736
+            ]
+          ],
+          "reading_order": 9,
+          "page": 1
+        },
+        {
+          "text": "Klinik Bulgular: Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              752
+            ],
+            [
+              918,
+              752
+            ],
+            [
+              918,
+              800
+            ],
+            [
+              82,
+              800
+            ]
+          ],
+          "reading_order": 10,
+          "page": 1
+        },
+        {
+          "text": "Hayati Tehlike: Yoktur.",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              816
+            ],
+            [
+              918,
+              816
+            ],
+            [
+              918,
+              864
+            ],
+            [
+              82,
+              864
+            ]
+          ],
+          "reading_order": 11,
+          "page": 1
+        },
+        {
+          "text": "BTM: Basit tıbbi müdahale ile giderilebilir niteliktedir.",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              880
+            ],
+            [
+              918,
+              880
+            ],
+            [
+              918,
+              928
+            ],
+            [
+              82,
+              928
+            ]
+          ],
+          "reading_order": 12,
+          "page": 1
+        }
+      ],
+      "ocr_history": [],
+      "synthetic_ocr_lines": [
+        {
+          "text": "GENEL ADLİ MUAYENE RAPORU — SENTETİK ÖRNEK",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              112
+            ],
+            [
+              918,
+              112
+            ],
+            [
+              918,
+              160
+            ],
+            [
+              82,
+              160
+            ]
+          ],
+          "reading_order": 0,
+          "page": 1
+        },
+        {
+          "text": "Kurum: SENTETİK EĞİTİM VE ARAŞTIRMA HASTANESİ",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              176
+            ],
+            [
+              918,
+              176
+            ],
+            [
+              918,
+              224
+            ],
+            [
+              82,
+              224
+            ]
+          ],
+          "reading_order": 1,
+          "page": 1
+        },
+        {
+          "text": "Rapor Tarihi: 15.08.2026",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              240
+            ],
+            [
+              918,
+              240
+            ],
+            [
+              918,
+              288
+            ],
+            [
+              82,
+              288
+            ]
+          ],
+          "reading_order": 2,
+          "page": 1
+        },
+        {
+          "text": "Rapor Sayısı: GARM-2026-0001",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              304
+            ],
+            [
+              918,
+              304
+            ],
+            [
+              918,
+              352
+            ],
+            [
+              82,
+              352
+            ]
+          ],
+          "reading_order": 3,
+          "page": 1
+        },
+        {
+          "text": "Protokol No: PR-2026-0001",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              368
+            ],
+            [
+              918,
+              368
+            ],
+            [
+              918,
+              416
+            ],
+            [
+              82,
+              416
+            ]
+          ],
+          "reading_order": 4,
+          "page": 1
+        },
+        {
+          "text": "Başvuru/Olay Tarihi: 14.08.2026 16:30",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              432
+            ],
+            [
+              918,
+              432
+            ],
+            [
+              918,
+              480
+            ],
+            [
+              82,
+              480
+            ]
+          ],
+          "reading_order": 5,
+          "page": 1
+        },
+        {
+          "text": "Başvuru Nedeni: Sentetik iş kazası",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              496
+            ],
+            [
+              918,
+              496
+            ],
+            [
+              918,
+              544
+            ],
+            [
+              82,
+              544
+            ]
+          ],
+          "reading_order": 6,
+          "page": 1
+        },
+        {
+          "text": "Adı Soyadı: DENİZ ÖRNEK",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              560
+            ],
+            [
+              918,
+              560
+            ],
+            [
+              918,
+              608
+            ],
+            [
+              82,
+              608
+            ]
+          ],
+          "reading_order": 7,
+          "page": 1
+        },
+        {
+          "text": "TCKN: 10000000146",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              624
+            ],
+            [
+              918,
+              624
+            ],
+            [
+              918,
+              672
+            ],
+            [
+              82,
+              672
+            ]
+          ],
+          "reading_order": 8,
+          "page": 1
+        },
+        {
+          "text": "Doğum Yeri ve Tarihi: SENTETİK İL / 02.05.1991",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              688
+            ],
+            [
+              918,
+              688
+            ],
+            [
+              918,
+              736
+            ],
+            [
+              82,
+              736
+            ]
+          ],
+          "reading_order": 9,
+          "page": 1
+        },
+        {
+          "text": "Klinik Bulgular: Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              752
+            ],
+            [
+              918,
+              752
+            ],
+            [
+              918,
+              800
+            ],
+            [
+              82,
+              800
+            ]
+          ],
+          "reading_order": 10,
+          "page": 1
+        },
+        {
+          "text": "Hayati Tehlike: Yoktur.",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              816
+            ],
+            [
+              918,
+              816
+            ],
+            [
+              918,
+              864
+            ],
+            [
+              82,
+              864
+            ]
+          ],
+          "reading_order": 11,
+          "page": 1
+        },
+        {
+          "text": "BTM: Basit tıbbi müdahale ile giderilebilir niteliktedir.",
+          "confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              880
+            ],
+            [
+              918,
+              880
+            ],
+            [
+              918,
+              928
+            ],
+            [
+              82,
+              928
+            ]
+          ],
+          "reading_order": 12,
+          "page": 1
+        }
+      ],
+      "is_synthetic": true
+    }
+  ],
+  "extraction": {
+    "schema_version": "1.2.0",
+    "case_id": "6695ef9d9f9b4fa99a4a76f2384e100a",
+    "patient": {
+      "full_name": {
+        "value": "DENİZ ÖRNEK",
+        "original_value": "DENİZ ÖRNEK",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+          "page": 1,
+          "evidence_text": "Adı Soyadı: DENİZ ÖRNEK",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              368
+            ],
+            [
+              918,
+              368
+            ],
+            [
+              918,
+              416
+            ],
+            [
+              82,
+              416
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "DENİZ ÖRNEK",
+            "original_value": "DENİZ ÖRNEK",
+            "provenance": {
+              "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+              "page": 1,
+              "evidence_text": "Adı Soyadı: DENİZ ÖRNEK",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  368
+                ],
+                [
+                  918,
+                  368
+                ],
+                [
+                  918,
+                  416
+                ],
+                [
+                  82,
+                  416
+                ]
+              ]
+            }
+          },
+          {
+            "value": "DENİZ ÖRNEK",
+            "original_value": "DENİZ ÖRNEK",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Adı Soyadı: DENİZ ÖRNEK",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  560
+                ],
+                [
+                  918,
+                  560
+                ],
+                [
+                  918,
+                  608
+                ],
+                [
+                  82,
+                  608
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "tckn": {
+        "value": "10000000146",
+        "original_value": "10000000146",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+          "page": 1,
+          "evidence_text": "TCKN: 10000000146",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              432
+            ],
+            [
+              918,
+              432
+            ],
+            [
+              918,
+              480
+            ],
+            [
+              82,
+              480
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "10000000146",
+            "original_value": "10000000146",
+            "provenance": {
+              "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+              "page": 1,
+              "evidence_text": "TCKN: 10000000146",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  432
+                ],
+                [
+                  918,
+                  432
+                ],
+                [
+                  918,
+                  480
+                ],
+                [
+                  82,
+                  480
+                ]
+              ]
+            }
+          },
+          {
+            "value": "10000000146",
+            "original_value": "10000000146",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "TCKN: 10000000146",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  624
+                ],
+                [
+                  918,
+                  624
+                ],
+                [
+                  918,
+                  672
+                ],
+                [
+                  82,
+                  672
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "birth_place": {
+        "value": "SENTETİK İL",
+        "original_value": "SENTETİK İL",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+          "page": 1,
+          "evidence_text": "Doğum Yeri: SENTETİK İL",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              496
+            ],
+            [
+              918,
+              496
+            ],
+            [
+              918,
+              544
+            ],
+            [
+              82,
+              544
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "SENTETİK İL",
+            "original_value": "SENTETİK İL",
+            "provenance": {
+              "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+              "page": 1,
+              "evidence_text": "Doğum Yeri: SENTETİK İL",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  496
+                ],
+                [
+                  918,
+                  496
+                ],
+                [
+                  918,
+                  544
+                ],
+                [
+                  82,
+                  544
+                ]
+              ]
+            }
+          },
+          {
+            "value": "SENTETİK İL",
+            "original_value": "SENTETİK İL",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Doğum Yeri ve Tarihi: SENTETİK İL / 02.05.1991",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  688
+                ],
+                [
+                  918,
+                  688
+                ],
+                [
+                  918,
+                  736
+                ],
+                [
+                  82,
+                  736
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "birth_date": {
+        "value": "02.05.1991",
+        "original_value": "02.05.1991",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+          "page": 1,
+          "evidence_text": "Doğum Tarihi: 02.05.1991",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              560
+            ],
+            [
+              918,
+              560
+            ],
+            [
+              918,
+              608
+            ],
+            [
+              82,
+              608
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "02.05.1991",
+            "original_value": "02.05.1991",
+            "provenance": {
+              "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+              "page": 1,
+              "evidence_text": "Doğum Tarihi: 02.05.1991",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  560
+                ],
+                [
+                  918,
+                  560
+                ],
+                [
+                  918,
+                  608
+                ],
+                [
+                  82,
+                  608
+                ]
+              ]
+            }
+          },
+          {
+            "value": "02.05.1991",
+            "original_value": "02.05.1991",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Doğum Yeri ve Tarihi: SENTETİK İL / 02.05.1991",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  688
+                ],
+                [
+                  918,
+                  688
+                ],
+                [
+                  918,
+                  736
+                ],
+                [
+                  82,
+                  736
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "request": {
+      "sender_authority": {
+        "value": "SENTETİK İLÇE EMNİYET MÜDÜRLÜĞÜ",
+        "original_value": "SENTETİK İLÇE EMNİYET MÜDÜRLÜĞÜ",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+          "page": 1,
+          "evidence_text": "SENTETİK İLÇE EMNİYET MÜDÜRLÜĞÜ",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              112
+            ],
+            [
+              918,
+              112
+            ],
+            [
+              918,
+              160
+            ],
+            [
+              82,
+              160
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "SENTETİK İLÇE EMNİYET MÜDÜRLÜĞÜ",
+            "original_value": "SENTETİK İLÇE EMNİYET MÜDÜRLÜĞÜ",
+            "provenance": {
+              "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+              "page": 1,
+              "evidence_text": "SENTETİK İLÇE EMNİYET MÜDÜRLÜĞÜ",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  112
+                ],
+                [
+                  918,
+                  112
+                ],
+                [
+                  918,
+                  160
+                ],
+                [
+                  82,
+                  160
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "letter_date": {
+        "value": "14.08.2026",
+        "original_value": "14.08.2026",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+          "page": 1,
+          "evidence_text": "Tarih: 14.08.2026",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              240
+            ],
+            [
+              918,
+              240
+            ],
+            [
+              918,
+              288
+            ],
+            [
+              82,
+              288
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "14.08.2026",
+            "original_value": "14.08.2026",
+            "provenance": {
+              "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+              "page": 1,
+              "evidence_text": "Tarih: 14.08.2026",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  240
+                ],
+                [
+                  918,
+                  240
+                ],
+                [
+                  918,
+                  288
+                ],
+                [
+                  82,
+                  288
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "letter_number": {
+        "value": "2026/DEMO-001",
+        "original_value": "2026/DEMO-001",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+          "page": 1,
+          "evidence_text": "Sayı: 2026/DEMO-001",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              176
+            ],
+            [
+              918,
+              176
+            ],
+            [
+              918,
+              224
+            ],
+            [
+              82,
+              224
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "2026/DEMO-001",
+            "original_value": "2026/DEMO-001",
+            "provenance": {
+              "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+              "page": 1,
+              "evidence_text": "Sayı: 2026/DEMO-001",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  176
+                ],
+                [
+                  918,
+                  176
+                ],
+                [
+                  918,
+                  224
+                ],
+                [
+                  82,
+                  224
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "incident": {
+        "value": "Sentetik iş kazası bildirimi",
+        "original_value": "Sentetik iş kazası bildirimi",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+          "page": 1,
+          "evidence_text": "Olay: Sentetik iş kazası bildirimi",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              624
+            ],
+            [
+              918,
+              624
+            ],
+            [
+              918,
+              672
+            ],
+            [
+              82,
+              672
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "Sentetik iş kazası bildirimi",
+            "original_value": "Sentetik iş kazası bildirimi",
+            "provenance": {
+              "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+              "page": 1,
+              "evidence_text": "Olay: Sentetik iş kazası bildirimi",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  624
+                ],
+                [
+                  918,
+                  624
+                ],
+                [
+                  918,
+                  672
+                ],
+                [
+                  82,
+                  672
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "requested_questions": {
+        "value": [
+          "Yaralanmanın basit tıbbi müdahale ile giderilebilirliği ve hayati tehlike durumu."
+        ],
+        "original_value": [
+          "Yaralanmanın basit tıbbi müdahale ile giderilebilirliği ve hayati tehlike durumu."
+        ],
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+          "page": 1,
+          "evidence_text": "İstenen Hususlar: Yaralanmanın basit tıbbi müdahale ile giderilebilirliği ve hayati tehlike durumu.",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              688
+            ],
+            [
+              918,
+              688
+            ],
+            [
+              918,
+              736
+            ],
+            [
+              82,
+              736
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": [
+              "Yaralanmanın basit tıbbi müdahale ile giderilebilirliği ve hayati tehlike durumu."
+            ],
+            "original_value": [
+              "Yaralanmanın basit tıbbi müdahale ile giderilebilirliği ve hayati tehlike durumu."
+            ],
+            "provenance": {
+              "source_document_id": "900a1b6234af45eeba13f7e35e36030e",
+              "page": 1,
+              "evidence_text": "İstenen Hususlar: Yaralanmanın basit tıbbi müdahale ile giderilebilirliği ve hayati tehlike durumu.",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  688
+                ],
+                [
+                  918,
+                  688
+                ],
+                [
+                  918,
+                  736
+                ],
+                [
+                  82,
+                  736
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "documents": [
+      {
+        "document_id": "900a1b6234af45eeba13f7e35e36030e",
+        "type": "cover_letter",
+        "file_name": "SENTETIK_ust_yazi.png",
+        "page_count": 1,
+        "classification_confidence": 0.93,
+        "user_confirmed_type": false
+      },
+      {
+        "document_id": "d144114f69214e65a92323b895778faf",
+        "type": "general_forensic_exam",
+        "file_name": "SENTETIK_genel_adli_muayene.png",
+        "page_count": 1,
+        "classification_confidence": 0.99,
+        "user_confirmed_type": false
+      }
+    ],
+    "medical": {
+      "issuing_institution": {
+        "value": "SENTETİK EĞİTİM VE ARAŞTIRMA HASTANESİ",
+        "original_value": "SENTETİK EĞİTİM VE ARAŞTIRMA HASTANESİ",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "d144114f69214e65a92323b895778faf",
+          "page": 1,
+          "evidence_text": "Kurum: SENTETİK EĞİTİM VE ARAŞTIRMA HASTANESİ",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              176
+            ],
+            [
+              918,
+              176
+            ],
+            [
+              918,
+              224
+            ],
+            [
+              82,
+              224
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "SENTETİK EĞİTİM VE ARAŞTIRMA HASTANESİ",
+            "original_value": "SENTETİK EĞİTİM VE ARAŞTIRMA HASTANESİ",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Kurum: SENTETİK EĞİTİM VE ARAŞTIRMA HASTANESİ",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  176
+                ],
+                [
+                  918,
+                  176
+                ],
+                [
+                  918,
+                  224
+                ],
+                [
+                  82,
+                  224
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "protocol_number": {
+        "value": "PR-2026-0001",
+        "original_value": "PR-2026-0001",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "d144114f69214e65a92323b895778faf",
+          "page": 1,
+          "evidence_text": "Protokol No: PR-2026-0001",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              368
+            ],
+            [
+              918,
+              368
+            ],
+            [
+              918,
+              416
+            ],
+            [
+              82,
+              416
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "PR-2026-0001",
+            "original_value": "PR-2026-0001",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Protokol No: PR-2026-0001",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  368
+                ],
+                [
+                  918,
+                  368
+                ],
+                [
+                  918,
+                  416
+                ],
+                [
+                  82,
+                  416
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "report_date": {
+        "value": "15.08.2026",
+        "original_value": "15.08.2026",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "d144114f69214e65a92323b895778faf",
+          "page": 1,
+          "evidence_text": "Rapor Tarihi: 15.08.2026",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              240
+            ],
+            [
+              918,
+              240
+            ],
+            [
+              918,
+              288
+            ],
+            [
+              82,
+              288
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "15.08.2026",
+            "original_value": "15.08.2026",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Rapor Tarihi: 15.08.2026",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  240
+                ],
+                [
+                  918,
+                  240
+                ],
+                [
+                  918,
+                  288
+                ],
+                [
+                  82,
+                  288
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "report_number": {
+        "value": "GARM-2026-0001",
+        "original_value": "GARM-2026-0001",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "d144114f69214e65a92323b895778faf",
+          "page": 1,
+          "evidence_text": "Rapor Sayısı: GARM-2026-0001",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              304
+            ],
+            [
+              918,
+              304
+            ],
+            [
+              918,
+              352
+            ],
+            [
+              82,
+              352
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "GARM-2026-0001",
+            "original_value": "GARM-2026-0001",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Rapor Sayısı: GARM-2026-0001",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  304
+                ],
+                [
+                  918,
+                  304
+                ],
+                [
+                  918,
+                  352
+                ],
+                [
+                  82,
+                  352
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "incident_date_time": {
+        "value": "14.08.2026 16:30",
+        "original_value": "14.08.2026 16:30",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "d144114f69214e65a92323b895778faf",
+          "page": 1,
+          "evidence_text": "Başvuru/Olay Tarihi: 14.08.2026 16:30",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              432
+            ],
+            [
+              918,
+              432
+            ],
+            [
+              918,
+              480
+            ],
+            [
+              82,
+              480
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "14.08.2026 16:30",
+            "original_value": "14.08.2026 16:30",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Başvuru/Olay Tarihi: 14.08.2026 16:30",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  432
+                ],
+                [
+                  918,
+                  432
+                ],
+                [
+                  918,
+                  480
+                ],
+                [
+                  82,
+                  480
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "incident_type": {
+        "value": "Sentetik iş kazası",
+        "original_value": "Sentetik iş kazası",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "d144114f69214e65a92323b895778faf",
+          "page": 1,
+          "evidence_text": "Başvuru Nedeni: Sentetik iş kazası",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              496
+            ],
+            [
+              918,
+              496
+            ],
+            [
+              918,
+              544
+            ],
+            [
+              82,
+              544
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "Sentetik iş kazası",
+            "original_value": "Sentetik iş kazası",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Başvuru Nedeni: Sentetik iş kazası",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  496
+                ],
+                [
+                  918,
+                  496
+                ],
+                [
+                  918,
+                  544
+                ],
+                [
+                  82,
+                  544
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "clinical_findings": {
+        "value": "Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+        "original_value": "Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "d144114f69214e65a92323b895778faf",
+          "page": 1,
+          "evidence_text": "Klinik Bulgular: Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              752
+            ],
+            [
+              918,
+              752
+            ],
+            [
+              918,
+              800
+            ],
+            [
+              82,
+              800
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+            "original_value": "Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Klinik Bulgular: Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  752
+                ],
+                [
+                  918,
+                  752
+                ],
+                [
+                  918,
+                  800
+                ],
+                [
+                  82,
+                  800
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "general_forensic_exam_summary": {
+        "value": "Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+        "original_value": "Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "d144114f69214e65a92323b895778faf",
+          "page": 1,
+          "evidence_text": "Klinik Bulgular: Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              752
+            ],
+            [
+              918,
+              752
+            ],
+            [
+              918,
+              800
+            ],
+            [
+              82,
+              800
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+            "original_value": "Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Klinik Bulgular: Sol ön kolda 2 cm yüzeysel abrazyon gözlendi.",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  752
+                ],
+                [
+                  918,
+                  752
+                ],
+                [
+                  918,
+                  800
+                ],
+                [
+                  82,
+                  800
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "epicrisis_summary": {
+        "value": null,
+        "original_value": null,
+        "status": "missing",
+        "approved": false,
+        "provenance": {
+          "source_document_id": null,
+          "page": null,
+          "evidence_text": null,
+          "ocr_confidence": null,
+          "polygon": null
+        },
+        "candidates": []
+      },
+      "department_exam_summary": {
+        "value": null,
+        "original_value": null,
+        "status": "missing",
+        "approved": false,
+        "provenance": {
+          "source_document_id": null,
+          "page": null,
+          "evidence_text": null,
+          "ocr_confidence": null,
+          "polygon": null
+        },
+        "candidates": []
+      },
+      "life_threat": {
+        "value": "no",
+        "original_value": "Yoktur.",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "d144114f69214e65a92323b895778faf",
+          "page": 1,
+          "evidence_text": "Hayati Tehlike: Yoktur.",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              816
+            ],
+            [
+              918,
+              816
+            ],
+            [
+              918,
+              864
+            ],
+            [
+              82,
+              864
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "no",
+            "original_value": "Yoktur.",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "Hayati Tehlike: Yoktur.",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  816
+                ],
+                [
+                  918,
+                  816
+                ],
+                [
+                  918,
+                  864
+                ],
+                [
+                  82,
+                  864
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "simple_medical_intervention": {
+        "value": "yes",
+        "original_value": "Basit tıbbi müdahale ile giderilebilir niteliktedir.",
+        "status": "extracted",
+        "approved": true,
+        "provenance": {
+          "source_document_id": "d144114f69214e65a92323b895778faf",
+          "page": 1,
+          "evidence_text": "BTM: Basit tıbbi müdahale ile giderilebilir niteliktedir.",
+          "ocr_confidence": 0.99,
+          "polygon": [
+            [
+              82,
+              880
+            ],
+            [
+              918,
+              880
+            ],
+            [
+              918,
+              928
+            ],
+            [
+              82,
+              928
+            ]
+          ]
+        },
+        "candidates": [
+          {
+            "value": "yes",
+            "original_value": "Basit tıbbi müdahale ile giderilebilir niteliktedir.",
+            "provenance": {
+              "source_document_id": "d144114f69214e65a92323b895778faf",
+              "page": 1,
+              "evidence_text": "BTM: Basit tıbbi müdahale ile giderilebilir niteliktedir.",
+              "ocr_confidence": 0.99,
+              "polygon": [
+                [
+                  82,
+                  880
+                ],
+                [
+                  918,
+                  880
+                ],
+                [
+                  918,
+                  928
+                ],
+                [
+                  82,
+                  928
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "warnings": [
+      {
+        "code": "field_missing",
+        "message": "Alan için kaynak bulunamadı.",
+        "severity": "warning",
+        "field_path": "medical.epicrisis_summary"
+      },
+      {
+        "code": "field_missing",
+        "message": "Alan için kaynak bulunamadı.",
+        "severity": "warning",
+        "field_path": "medical.department_exam_summary"
+      }
+    ],
+    "ready_to_generate": false
+  },
+  "report_drafts": [
+    {
+      "draft_id": "698e91df12ba479284edee106347134c",
+      "created_at": "2026-09-03T17:35:24.379791+00:00",
+      "status": "review_required",
+      "model_name": "SENTETIK-QWEN",
+      "prompt_version": "report-plan-v1"
+    }
+  ],
+  "docx_input": null,
+  "docx_reports": [],
+  "audit": [
+    {
+      "event": "synthetic_demo_created"
+    },
+    {
+      "event": "ocr_and_rule_extraction_completed"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "patient.full_name"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "patient.tckn"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "patient.birth_place"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "patient.birth_date"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "request.sender_authority"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "request.letter_date"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "request.letter_number"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "request.incident"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "request.requested_questions"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "medical.issuing_institution"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "medical.protocol_number"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "medical.report_date"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "medical.report_number"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "medical.incident_date_time"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "medical.incident_type"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "medical.clinical_findings"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "medical.general_forensic_exam_summary"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "medical.life_threat"
+    },
+    {
+      "event": "field_approved",
+      "field_path": "medical.simple_medical_intervention"
+    },
+    {
+      "event": "report_draft_generated",
+      "draft_id": "698e91df12ba479284edee106347134c",
+      "model_name": "SENTETIK-QWEN",
+      "prompt_version": "report-plan-v1"
+    }
+  ],
+  "stage": "review"
+}
