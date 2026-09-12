@@ -20,8 +20,16 @@ services:
       - ./Templates/adli-rapor-sablonu-v2.docx:/templates/adli-rapor-sablonu-v2.docx:ro
       - ./Templates/kurumsal-girdiler_mapping_alan-esleme-v2.json:/templates/kurumsal-girdiler_mapping_alan-esleme-v2.json:ro
     gpus: all
+    init: true
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
     healthcheck:
-      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/openapi.json', timeout=3)"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=3)"]
       interval: 10s
       timeout: 5s
       retries: 12
@@ -35,3 +43,13 @@ services:
         condition: service_healthy
     ports:
       - "127.0.0.1:5173:80"
+    restart: unless-stopped
+    logging:
+      options:
+        max-size: "5m"
+        max-file: "2"
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1/"]
+      interval: 10s
+      timeout: 5s
+      retries: 6

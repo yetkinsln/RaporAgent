@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -64,6 +65,26 @@ class PaddleOcrProvider:
             text_recognition_model_dir=_model_dir_from_environment("RAPOR_AGENT_PADDLE_REC_MODEL_DIR"),
         )
         self._engine: Any | None = None
+
+    def status(self) -> dict[str, Any]:
+        """Modeli yüklemeden yerel OCR çalışma zamanını denetler."""
+        detection_ready = bool(
+            self.config.text_detection_model_dir
+            and self.config.text_detection_model_dir.is_dir()
+        )
+        recognition_ready = bool(
+            self.config.text_recognition_model_dir
+            and self.config.text_recognition_model_dir.is_dir()
+        )
+        runtime_ready = importlib.util.find_spec("paddleocr") is not None
+        return {
+            "provider": "paddleocr",
+            "runtime_ready": runtime_ready,
+            "model_files_ready": detection_ready and recognition_ready,
+            "ready": runtime_ready and detection_ready and recognition_ready,
+            "loaded": self._engine is not None,
+            "local_only": True,
+        }
 
     def _get_engine(self) -> Any:
         if self._engine is not None:

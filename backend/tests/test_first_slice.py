@@ -81,6 +81,37 @@ def _synthetic_docx_input(**overrides):
     return values
 
 
+def test_health_endpoint_is_content_free_and_reports_release_components(tmp_path):
+    client = TestClient(create_app(data_dir=tmp_path))
+
+    response = client.get("/api/health")
+
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["status"] in {"ready", "degraded"}
+    assert payload["version"] == "1.0.0"
+    assert payload["local_only"] is True
+    assert set(payload["components"]) == {"storage", "ocr", "llm", "docx"}
+    assert "model_path_configured" not in json.dumps(payload)
+
+
+def test_delete_case_removes_only_the_selected_local_case(tmp_path):
+    client = TestClient(create_app(data_dir=tmp_path))
+    first = client.post("/api/demo-case").json()
+    second = client.post("/api/demo-case").json()
+    first_dir = tmp_path / "cases" / first["case_id"]
+    second_dir = tmp_path / "cases" / second["case_id"]
+
+    deleted = client.delete(f"/api/cases/{first['case_id']}")
+
+    assert deleted.status_code == 200
+    assert deleted.json() == {"deleted": True, "case_id": first["case_id"]}
+    assert not first_dir.exists()
+    assert second_dir.is_dir()
+    assert client.get(f"/api/cases/{first['case_id']}").status_code == 404
+    assert client.get(f"/api/cases/{second['case_id']}").status_code == 200
+
+
 def test_synthetic_demo_runs_from_page_to_source_backed_confirmation(tmp_path):
     client = TestClient(create_app(data_dir=tmp_path))
 

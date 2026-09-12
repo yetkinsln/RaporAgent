@@ -62,6 +62,30 @@ class CaseService:
     def create_case(self) -> dict[str, Any]:
         return self._public_case(self.store.create_case())
 
+    def health_status(self) -> dict[str, Any]:
+        """Hasta içeriğine dokunmadan yayın bileşenlerinin durumunu özetler."""
+        ocr_status = self.ocr_provider.status() if hasattr(self.ocr_provider, "status") else {"ready": True}
+        llm_status = self.llm_status()
+        docx_status = self.docx_status()
+        components = {
+            "storage": {"ready": self.store.root.is_dir()},
+            "ocr": {
+                "ready": bool(ocr_status.get("ready", False)),
+                "loaded": bool(ocr_status.get("loaded", False)),
+            },
+            "llm": {
+                "ready": bool(llm_status.get("model_files_ready", False) and llm_status.get("runtime_ready", False)),
+                "loaded": bool(llm_status.get("loaded", False)),
+            },
+            "docx": {"ready": bool(docx_status.get("available", False))},
+        }
+        return {
+            "status": "ready" if all(item["ready"] for item in components.values()) else "degraded",
+            "version": "1.0.0",
+            "local_only": True,
+            "components": components,
+        }
+
     def create_demo_case(self) -> dict[str, Any]:
         case = self.store.create_case()
         for fixture in demo_documents():
@@ -99,6 +123,14 @@ class CaseService:
             return self._public_case(self.store.load_case(case_id))
         except StorageError as error:
             raise ServiceError(str(error), status_code=404, code="case_not_found") from error
+
+    def delete_case(self, case_id: str) -> dict[str, Any]:
+        self._load_case(case_id)
+        try:
+            self.store.delete_case(case_id)
+        except StorageError as error:
+            raise ServiceError(str(error), status_code=500, code="case_delete_failed") from error
+        return {"deleted": True, "case_id": case_id}
 
     def upload_document(self, case_id: str, file_name: str, payload: bytes) -> dict[str, Any]:
         try:

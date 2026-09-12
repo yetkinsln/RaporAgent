@@ -1,4 +1,5 @@
-import type { BulkApprovalResponse, CaseState, CropSelection, DocxInput, DocxReportResponse, DocxStatus, DocumentType, FieldValue, LlmStatus, ReportDraftResponse } from "./types";
+import type { BulkApprovalResponse, CaseState, CropSelection, DocxInput, DocxReportResponse, DocxStatus, DocumentType, FieldValue, HealthStatus, LlmStatus, ReportDraftResponse } from "./types";
+import { userFacingServiceError } from "./ui-copy";
 
 // API yolları aşağıda zaten `/api/...` ile başlar. Eski Docker yapılarında
 // VITE_API_BASE `/api` olarak kalmış olsa bile yolu iki kez eklemeyelim.
@@ -27,7 +28,8 @@ const validationFieldLabels: Record<string, string> = {
 export function apiErrorMessage(payload: unknown): string {
   const detail = (payload as ApiErrorPayload | null)?.detail;
   if (detail && typeof detail === "object" && !Array.isArray(detail) && "message" in detail && typeof detail.message === "string") {
-    return detail.message;
+    const code = "code" in detail && typeof detail.code === "string" ? detail.code : null;
+    return userFacingServiceError(code, detail.message);
   }
   // Eski sunucu sürümü veya başka bir FastAPI doğrulama rotası yine standart
   // 422 dizisi döndürürse, kullanıcıya boş genel hata yerine alanı göster.
@@ -54,8 +56,11 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export const api = {
+  health: () => request<HealthStatus>("/api/health"),
   createCase: () => request<CaseState>("/api/cases", { method: "POST" }),
   createDemoCase: () => request<CaseState>("/api/demo-case", { method: "POST" }),
+  getCase: (caseId: string) => request<CaseState>(`/api/cases/${caseId}`),
+  deleteCase: (caseId: string) => request<{ deleted: true; case_id: string }>(`/api/cases/${caseId}`, { method: "DELETE" }),
   process: (caseId: string) => request<CaseState>(`/api/cases/${caseId}/process`, { method: "POST" }),
   setDocumentType: (caseId: string, documentId: string, documentType: DocumentType) =>
     request<CaseState>(`/api/documents/${documentId}/type?case_id=${encodeURIComponent(caseId)}`, {

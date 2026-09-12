@@ -65,6 +65,17 @@ class CaseStore:
         temporary.write_text(json.dumps(case, ensure_ascii=False, indent=2), encoding="utf-8")
         os.replace(temporary, destination)
 
+    def delete_case(self, case_id: str) -> None:
+        """Doğrulanmış tek bir vaka dizinini ve içindeki tüm yerel veriyi siler."""
+        cases_dir = (self.root / "cases").resolve()
+        case_dir = self.case_dir(case_id).resolve()
+        if case_dir.parent != cases_dir or not (case_dir / "case.json").is_file():
+            raise StorageError("Vaka bulunamadı veya silme hedefi güvenli değil.")
+        try:
+            shutil.rmtree(case_dir)
+        except OSError as error:
+            raise StorageError("Vakanın yerel dosyaları tamamen silinemedi.") from error
+
     def store_upload(self, case_id: str, file_name: str, content: bytes) -> dict[str, str]:
         extension, mime_type = inspect_upload(content)
         document_id = uuid.uuid4().hex

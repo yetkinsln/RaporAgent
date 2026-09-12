@@ -139,6 +139,18 @@ export interface LlmStatus {
   local_only: true;
 }
 
+export interface HealthStatus {
+  status: "ready" | "degraded";
+  version: string;
+  local_only: true;
+  components: {
+    storage: { ready: boolean };
+    ocr: { ready: boolean; loaded: boolean };
+    llm: { ready: boolean; loaded: boolean };
+    docx: { ready: boolean };
+  };
+}
+
 export interface BulkApprovalResponse {
   case: CaseState;
   approved_field_paths: string[];

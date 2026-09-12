@@ -77,7 +77,7 @@ class PageTransformUpdate(BaseModel):
 def create_app(*, data_dir: Path | None = None, service: CaseService | None = None) -> FastAPI:
     root = data_dir or Path(os.environ.get("RAPOR_AGENT_DATA_DIR", Path(__file__).resolve().parents[2] / "data"))
     case_service = service or CaseService(root)
-    app = FastAPI(title="Rapor Agent", version="0.1.0")
+    app = FastAPI(title="Rapor Agent", version="1.0.0")
     app.state.case_service = case_service
     app.add_middleware(
         CORSMiddleware,
@@ -122,6 +122,10 @@ def create_app(*, data_dir: Path | None = None, service: CaseService | None = No
     def create_case() -> dict:
         return case_service.create_case()
 
+    @app.get("/api/health")
+    def health() -> dict:
+        return case_service.health_status()
+
     @app.post("/api/demo-case", status_code=201)
     def create_demo_case() -> dict:
         return case_service.create_demo_case()
@@ -129,6 +133,10 @@ def create_app(*, data_dir: Path | None = None, service: CaseService | None = No
     @app.get("/api/cases/{case_id}")
     def get_case(case_id: str) -> dict:
         return case_service.get_case(case_id)
+
+    @app.delete("/api/cases/{case_id}")
+    def delete_case(case_id: str) -> dict:
+        return case_service.delete_case(case_id)
 
     @app.post("/api/cases/{case_id}/documents", status_code=201)
     async def upload_document(case_id: str, file: Annotated[UploadFile, File(...)]) -> dict:

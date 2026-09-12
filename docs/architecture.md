@@ -45,6 +45,8 @@ Bu arayüzler model/kütüphane yükseltmelerini alan kurallarından izole eder 
 
 ## Docker OCR çalışma zamanı
 
+Yayın sağlığı `GET /api/health` üzerinden hasta içeriği olmadan raporlanır. Yanıt; sürüm ile depolama, PaddleOCR, Qwen ve Word sözleşmesinin hazır/yüklü bayraklarını içerir. `DELETE /api/cases/{case_id}` yalnızca doğrulanmış tek vaka dizinini kaldırır; arayüz bu çağrıyı kalıcı silme uyarısından sonra yapar.
+
 `compose.yaml`, API'yi yalnızca `web` servisi arkasında tutar; ana makineye açılan tek port `127.0.0.1:5173`'tür. API'nin PaddleOCR 3.1.0 adaptörü, imajdaki sabit Türkçe algılama ve Latin alfabe tanıma modellerinin mutlak yollarıyla başlatılır. Docker build, model katmanını oluştururken ağ erişimi kullanır; container çalışırken `PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True` ve açık model klasörleri sayesinde uzaktan model kaynağı aranmaz.
 
 `backend/scripts/verify_paddle_ocr.py`; salt sentetik Türkçe üst yazı rasterında gerçek motorun en az bir metin satırı ve dört köşeli kanıt poligonları ürettiğini denetler. Test, OCR metnini çıktıya yazmaz.
@@ -63,7 +65,7 @@ data/cases/<case-id>/
   reports/
 ```
 
-Veri tabanı yalnızca yolları ve meta verileri tutar. Üretim kurulumu; disk şifreleme, erişim kontrolü, yedekleme ve saklama/silme politikasını kurum kararıyla tamamlar.
+Veri tabanı yalnızca yolları ve meta verileri tutar. Tek vaka, arayüzdeki açık kullanıcı onayından sonra özgün belgeleri, türevleri ve raporlarıyla birlikte silinebilir. Üretim kurulumu; disk şifreleme, erişim kontrolü, yedekleme ve saklama/silme politikasını kurum kararıyla tamamlar.
 
 ## Neden MongoDB şart değil?
 

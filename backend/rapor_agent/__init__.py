@@ -1,1 +1,1 @@
-"""Yerel adli rapor taslak uygulamasinin ilk dikey dilimi."""
+"""Yerel, kaynak izlenebilir adli rapor taslak uygulaması."""

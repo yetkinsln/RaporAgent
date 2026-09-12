@@ -1,8 +1,8 @@
-# Rapor Agent — ilk dikey dilim
+# Rapor Agent 1.0 — yerel adli rapor çalışma alanı
 
-Bu depo, adli tıbbi rapor için **nihai karar vermeyen** ve yalnızca yerelde çalışan taslak uygulamasının ilk dilimini içerir:
+Bu depo, adli tıbbi rapor için **nihai karar vermeyen**, kaynak izlenebilir ve yalnızca yerelde çalışan yayın paketini içerir:
 
-`yükleme → sayfa görüntüsü → OCR poligonları → kaynaklı alan çıkarımı → kullanıcı onayı`
+`yükleme → sayfa görüntüsü → PaddleOCR poligonları → kaynaklı alan çıkarımı → kullanıcı onayı → yerel Qwen taslağı → kurumsal DOCX taslağı`
 
 Bu sürümde yerel Qwen3-8B ile şemalı bölüm planından oluşturulan, kullanıcı incelemesi gerektiren JSON/TXT rapor taslağı kaydı vardır. Word çıktısı, kurumun verdiği boş eski `.doc` belgesinden yerelde türetilen `Templates/adli-rapor-sablonu-v2.docx` ve sürümlü JSON eşleme sözleşmesiyle üretilir. SAYI yalnızca kullanıcı tarafından manuel girilir; uygulama numara üretmez veya önermez. Kaynak alanları ve Word girdileri açıkça onaylanmadan `.docx` oluşturulmaz.
 
@@ -33,6 +33,18 @@ Kod, Dockerfile veya bağımlılıklar değiştiyse imajları da yenilemek için
 ```
 
 Tarayıcı açmadan yalnızca yerel servisi doğrulamak için `-NoBrowser` eklenebilir.
+
+Servisleri yerel vaka verisini koruyarak durdurmak için:
+
+```powershell
+.\stop.ps1
+```
+
+Yayın öncesi otomatik kontrollerin tamamını çalıştırmak için:
+
+```powershell
+.\verify-release.ps1
+```
 
 Arayüz `http://127.0.0.1:5173` adresinde açılır. Vaka verileri proje kökündeki `runtime-data/` dizininde kalır; bu dizin kaynak denetimine dahil edilmez. Gerçek PaddleOCR motorunu imajdaki sentetik belgeyle tekrar denetlemek için:
 
@@ -71,7 +83,7 @@ npm install
 npm run dev
 ```
 
-Arayüz `http://127.0.0.1:5173` adresinde açılır. **Sentetik vakayı yükle** düğmesi, gerçek kişi verisi içermeyen üst yazı ve genel adli muayene belgesini oluşturur. Gerçek yüklemelerde PNG, JPEG ve PDF imzası doğrulanır; dosya adı disk yolu olarak kullanılmaz.
+Arayüz `http://127.0.0.1:5173` adresinde açılır. **Örnek vakayla dene** düğmesi, gerçek kişi verisi içermeyen üst yazı ve genel adli muayene belgesini oluşturur. Gerçek yüklemelerde PNG, JPEG ve PDF imzası doğrulanır; dosya adı disk yolu olarak kullanılmaz.
 
 Kaynak sayfasındaki `↶`, `↷`, **Kırp** ve **Sıfırla** kontrolleri sayfayı yerelde düzeltir. Bu işlem özgün dosyayı değiştirmez; önceki OCR/alan çıkarımını geçersizleştirir ve yeniden OCR çalıştırılmasını gerektirir. Ayrıntı için [manuel sayfa düzeltmesi](docs/iteration-02-page-corrections.md) belgesine bakın.
 
@@ -94,4 +106,4 @@ Test fixture’ları açıkça sentetiktir. Kullanıcının arayüzden yükledi�
 
 ## Üretim ortamı notu
 
-Uygulama işlevsel olarak yerel Docker akışında çalışır. Kurumsal canlı kullanımdan önce disk şifreleme, kullanıcı/rol yetkilendirmesi, yedekleme ve saklama-silme süreleri kurum tarafından ayrıca belirlenmelidir.
+Uygulama yerel Docker yayınında `127.0.0.1` ile sınırlandırılmıştır. Çok kullanıcılı veya kurum ağına açık kullanım; kimlik doğrulama, rol yetkilendirmesi, disk şifreleme, yedekleme ve saklama-silme süreleri kurum tarafından belirlenmeden etkinleştirilmemelidir. Kurulum, sentetik kabul testi ve veri yaşam döngüsü ayrıntıları için [1.0 yerel yayın kılavuzuna](docs/release-1.0.md) bakın.
